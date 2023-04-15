@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;   
+}
+
+
+$primary-color:white;
+$secondary-color:black;
+$hover-color:rgb(160, 157, 157);
+$large-heading:2.8rem;
+$normal-heading:2rem;
+$line-color:#E09900;
+
+// -------------
+@mixin BUTTON( $bg, $hoverBgColor, $fontSize, $w, $h ){
+    background-color: $bg;
+    font-size: $fontSize;
+    font-weight: 500;
+    border-radius: 6px;
+    width: $w;
+    height: $h;
+    transition: all .4s ease;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    &:hover{
+        width: calc($w + 15px);
+        background-color: $hoverBgColor;
+    }
+}
+$primary-button-bg:#747370 ;
+$primary-button-hover-bg:black ;
+$primary-button-fontSize:1rem ;
+$primary-button-w:113px ;
+$primary-button-h: 45px ;
+
+// -------------
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 1rem calc((100vw - 1250px) / 2)
+}

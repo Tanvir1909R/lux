@@ -1,0 +1,94 @@
+@use "../../../index.scss" as *;
+
+.rewards_wrapper {
+  padding: 7rem 2rem;
+  .heading {
+    text-align: center;
+    h1 {
+      font-size: $large-heading;
+      margin-bottom: 30px;
+      position: relative;
+      &::after {
+        content: "";
+        background-color: $line-color;
+        width: 200px;
+        height: 3px;
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    button {
+      @include BUTTON(
+        $primary-button-bg,
+        $primary-button-hover-bg,
+        $primary-button-fontSize,
+        $primary-button-w,
+        $primary-button-h
+      );
+    }
+  }
+  .reward_detail {
+    .detail_heading {
+      margin: 120px 0 70px 0;
+      h3 {
+        font-size: $normal-heading;
+        margin-top: 10px;
+        position: relative;
+        &::after {
+          content: "";
+          background-color: $line-color;
+          width: 90px;
+          height: 3px;
+          position: absolute;
+          bottom: -25px;
+          left: 0;
+        }
+      }
+    }
+    .detail_desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        width: 50%;
+        line-height: 25px;
+      }
+      button {
+        @include BUTTON(
+          $primary-button-bg,
+          $primary-button-hover-bg,
+          $primary-button-fontSize,
+          $primary-button-w,
+          $primary-button-h
+        );
+      }
+    }
+  }
+  .reward_slider {
+    margin-top: 50px;
+    .swiper-slide {
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .rewards_wrapper {
+    .reward_detail {
+      .detail_desc {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        p {
+          width: 100%;
+          line-height: 25px;
+        }
+        button {
+            margin-top: 30px;
+        }
+      }
+    }
+  }
+}
