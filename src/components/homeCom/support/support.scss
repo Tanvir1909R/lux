@@ -1,0 +1,73 @@
+@use '../../../index.scss' as *;
+
+.support_wrapper{
+    padding: 7rem 2rem;
+    .support_heading{
+        text-align: center;
+        margin-bottom: 90px;
+        h3{
+            font-size: $normal-heading;
+            position: relative;
+            &::after {
+                content: "";
+                background-color: $line-color;
+                width: 90px;
+                height: 3px;
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+        }
+    }
+    .support_cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 80px;
+        .support_card{
+            background: url(../../../assets/support_bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 3rem;
+            .support_card_logo{
+                text-align: center;
+                padding: 2rem 0;
+            }
+            .support_card_desc{
+                color: white;
+                h4{
+                    font-size: 1.3rem;
+                    margin-bottom: 13px;
+                }
+                p{
+                    font-size: .8rem;
+                    margin-bottom: 13px;
+                }
+                a{
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1040px){
+    .support_wrapper{
+        .support_cards{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+        }
+    }
+}
+
+
+@media(max-width:576px){
+    .support_wrapper{
+        .support_cards{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 50px;
+        }
+    }
+}

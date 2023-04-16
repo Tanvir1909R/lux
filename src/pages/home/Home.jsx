@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import { Membership, Rewards, Slider } from "../../components";
+import { Membership, RecentWinner, Rewards, Slider, Support } from "../../components";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
@@ -17,7 +17,13 @@ const Home = () => {
         <Rewards />
       </section>
       <section>
-      <Membership/>
+        <Membership />
+      </section>
+      <section>
+        <RecentWinner />
+      </section>
+      <section>
+        <Support/>
       </section>
     </>
   );

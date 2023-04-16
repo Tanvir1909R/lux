@@ -1,0 +1,28 @@
+@use '../../../index.scss' as *;
+
+.winner_wrapper{
+    padding: 7rem 2rem;
+    .winner_heading{
+        text-align: center;
+        margin-bottom: 100px;
+        h3{
+            font-size: $normal-heading;
+            position: relative;
+            &::after {
+                content: "";
+                background-color: $line-color;
+                width: 90px;
+                height: 3px;
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+        }
+    }
+    .winner_slider{
+        .swiper-slide{
+            height: 280px;
+        }
+    }
+}
