@@ -19,22 +19,16 @@ const NavBar = () => {
           </div>
           <nav ref={navbar}>
             <div>
-              <Link>Join Now</Link>
-            </div>
-            <div>
-              <Link>Giveaways</Link>
-            </div>
-            <div>
               <Link>About</Link>
             </div>
             <div>
               <Link>Rewards</Link>
             </div>
             <div>
-              <Link>Shop</Link>
+              <Link>Login</Link>
             </div>
             <div>
-              <Link>Login</Link>
+              <Link>Join Now</Link>
             </div>
           </nav>
           <div className="bar" onClick={handleNavbar}>

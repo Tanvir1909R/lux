@@ -7,7 +7,7 @@ const Rewards = () => {
     <div className="container">
       <div className="rewards_wrapper">
       <div className="heading">
-        <h1>Australia’s Luxury & <br /> Lifestyle Rewards Club</h1>
+        <h1>Nightlife & <br /> Lifestyle Rewards Club</h1>
         <button>Join Now</button>
       </div>
       <div className="reward_detail">

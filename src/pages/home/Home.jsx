@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import { Membership, RecentWinner, Rewards, Slider, Support } from "../../components";
+import { Membership, RecentWinner, Rewards, Support } from "../../components";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
@@ -11,7 +11,9 @@ const Home = () => {
       </Helmet>
 
       <section id="hero">
-        <Slider isNavigation={true} />
+        <div>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uZUAQK9ggCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </section>
       <section>
         <Rewards />
