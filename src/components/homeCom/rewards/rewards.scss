@@ -74,6 +74,24 @@
   }
 }
 
+.key_button{
+  position: relative;
+  img{
+    width: 215px;
+    position: absolute;
+  }
+  .left_key{
+    left: 10%;
+    top: -30px;
+    opacity: 0.5;
+  }
+  .right_key{
+    right: 10%;
+    top: -30px;
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: 950px) {
   .rewards_wrapper {
     .reward_detail {

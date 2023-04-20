@@ -55,7 +55,7 @@ export default function App({
         className="mySwiper"
       >
         {data.length ? (
-          data.map((img) => <SwiperSlide><img src={img} alt="events" /></SwiperSlide>)
+          data.map((img) => <SwiperSlide key={img}><img src={img} alt="events" /></SwiperSlide>)
         ) : (
           <>
             <SwiperSlide>Slide 1</SwiperSlide>

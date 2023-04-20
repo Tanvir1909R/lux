@@ -55,38 +55,22 @@
     }
     h3{
       font-size: 1.5rem;
-      margin: 30px 0 100px 0;
+      margin: 30px 0 50px 0;
       span{
         font-weight: bold;
         color: $line-color;
       }
     }
-    
-    .key_button{
-      position: relative;
-      button {
-        @include BUTTON(
-          $primary-button-bg,
-          $primary-button-hover-bg,
-          $primary-button-fontSize,
-          $primary-button-w,
-          $primary-button-h,
-        );
-        z-index: 1;
-      } 
-      img{
-        width: 215px;
-        position: absolute;
-      }
-      .left_key{
-        left: 20%;
-        top: -30px;
-      }
-      .right_key{
-        right: 20%;
-        top: -30px;
-      }
-    }
+    button {
+      @include BUTTON(
+        $primary-button-bg,
+        $primary-button-hover-bg,
+        $primary-button-fontSize,
+        $primary-button-w,
+        $primary-button-h,
+      );
+      z-index: 1;
+    } 
   }
 }
 
