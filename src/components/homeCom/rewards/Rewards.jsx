@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import "./rewards.scss";
 import { Slider } from "../..";
 import { gsap } from "gsap";
@@ -6,54 +6,30 @@ import rightKey from "../../../assets/right_key.png";
 import leftKey from "../../../assets/left_key.png";
 
 const Rewards = () => {
-  // const btn = useRef()
-  // useLayoutEffect(() => {
-  //   document.addEventListener("mousemove", (e) => {
-  //     // const depth = 90;
-  //     // const moveX = e.clientX - window.innerWidth
-  //     // const moveX = (e.pageX - window.innerWidth / 2) / depth;
-  //     const moveY = e.pageY / 90 - 13;
-  //     let leftPosition = btn.current.getBoundingClientRect().left - e.clientX
-  //     let rightPosition = btn.current.getBoundingClientRect().right - e.clientX
-  //     console.log(rightPosition, e.clientX);
-  //     gsap.to(".left_key", {
-  //       x: leftPosition < -63 ? -63 + leftPosition : -leftPosition,
-  //       // x: -leftPosition,
-  //       rotate: moveY,
-  //       transformOrigin: "left",
-  //     });
-  //     gsap.to(".right_key", {
-  //       x: rightPosition > 63 ? rightPosition =  63 + rightPosition : -rightPosition,
-  //       rotate: -moveY,
-  //       transformOrigin: "right",
-  //     });
-  //   });
-  // }, []);
-
-  const handleInter = ()=>{
-    gsap.to('.left_key',{
-      transform:.5,
-      left:23 + '%',
-      opacity:1
-    })
-    gsap.to('.right_key',{
-      transform:.5,
-      right:23 + '%',
-      opacity:1
-    })
-  }
-  const handleLeave = ()=>{
-    gsap.to('.left_key',{
-      transform:.5,
-      left:10 + '%',
-      opacity:0.5
-    })
-    gsap.to('.right_key',{
-      transform:.5,
-      right:10 + '%',
-      opacity:0.5
-    })
-  }
+  const btn = useRef()
+  useLayoutEffect(() => {
+    document.addEventListener("mousemove", (e) => {
+      const moveY = e.pageY / 90 - 13;
+      let centerX = window.innerWidth / 2
+      let x = e.clientX - centerX
+      let positiveX = Math.abs(x) / 3
+      let xOf2 = x / 3
+      // console.log(leftPosition,rightPosition);
+      console.log(x);
+      console.log(positiveX);
+      gsap.to(".left_key", {
+        x: x >= 0 ?  - xOf2 : xOf2,
+        rotate: moveY,
+        transformOrigin: "left",
+      });
+      gsap.to(".right_key", {
+        x:  positiveX ,
+        // x: x,
+        rotate: -moveY,
+        transformOrigin: "right",
+      });
+    });
+  }, []);
   return (
     <div className="container">
       <div className="rewards_wrapper">
@@ -63,20 +39,18 @@ const Rewards = () => {
           </h1>
           <div className="key_button">
             <img src={leftKey} alt="key" className="key left_key" />
-            <button onMouseEnter={handleInter} onMouseLeave={handleLeave}>Join Now</button>
+            <button ref={btn}>Join Now</button>
             <img src={rightKey} alt="key" className="key right_key" />
           </div>
         </div>
         <div className="reward_detail">
           <div className="detail_heading">
             <small>MEMBER REWARDS</small>
-            <h3>Rewards with 4500+ businesses</h3>
+            <h3>Rewards with 100+ exclusive events</h3>
           </div>
           <div className="detail_desc">
             <p>
-              Introducing you to Australia’s most luxurious loyalty rewards club
-              and partner program. Members benefit from exclusive deals in
-              shopping, entertainment, dining, travel and much more.
+            Introducing you to an invite-only loyalty rewards club and partner program. Members benefit from exclusive deals in entertainment, dining, travel and much more.
             </p>
             <button>See More</button>
           </div>
