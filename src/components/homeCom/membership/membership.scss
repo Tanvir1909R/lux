@@ -72,12 +72,10 @@
 }
 
 @media(max-width:1260px){
-  .membership_wrapper {
     .benefits {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
     }
-  }
 }
 
 @media(max-width:1023px){
@@ -94,6 +92,17 @@
     .membership_cards{
       grid-template-columns: repeat(1,1fr);
       grid-gap: 40px;
+    }
+  }
+  .rewards_program{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-top: 90px;
+    .benefits{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
     }
   }
 }
