@@ -8,41 +8,7 @@
     h3 {
       font-size: $normal-heading;
     }
-  }
-  .benefits {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    .benefit {
-      display: flex;
-
-      .benefit_icon {
-        width: 80px;
-        height: 75px;
-        flex-shrink: 0;
-        padding: 0.3rem;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      .benefit_desc {
-        h4 {
-          font-size: 1.1rem;
-          margin-bottom: 10px;
-        }
-        p {
-          line-height: 24px;
-        }
-      }
-    }
-  }
-  .membership_cards{
-    margin: 70px 0;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 15px;
-  }                                                                    
+  }                                                               
   .membership_join{
     margin-top: 20px;
     text-align: center;
@@ -71,6 +37,37 @@
       );
       z-index: 1;
     } 
+  }
+}
+
+.rewards_program{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 90px;
+  .program_card{
+    width: 100%;
+    height:100%;
+    background-color: rgb(153, 152, 152);
+  }
+  .benefits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    .benefit{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .benefit_icon{
+        width: 70px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }
 

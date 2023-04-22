@@ -50,7 +50,7 @@ const Rewards = () => {
           </div>
           <div className="detail_desc">
             <p>
-            Introducing you to an invite-only loyalty rewards club and partner program. Members benefit from exclusive deals in entertainment, dining, travel and much more.
+            Introducing you to an invite-only loyalty rewards club and partner program. Members benefit from exclusive deals in entertainment, dining, travel and much more. 
             </p>
             <button>See More</button>
           </div>

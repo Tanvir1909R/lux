@@ -12,7 +12,7 @@ const Home = () => {
 
       <section id="hero">
         <div>
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uZUAQK9ggCI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vlfGm3x0TNg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
       <section>
