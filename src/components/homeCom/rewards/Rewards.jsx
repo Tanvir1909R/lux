@@ -46,13 +46,12 @@ const Rewards = () => {
         <div className="reward_detail">
           <div className="detail_heading">
             <small>MEMBER REWARDS</small>
-            <h3>Rewards with 100+ exclusive events</h3>
+            <h3>Rewards with exclusive venues</h3>
           </div>
           <div className="detail_desc">
             <p>
             Introducing you to an invite-only loyalty rewards club and partner program. Members benefit from exclusive deals in entertainment, dining, travel and much more. 
             </p>
-            <button>See More</button>
           </div>
         </div>
         <div className="reward_slider">

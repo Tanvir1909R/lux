@@ -19,10 +19,10 @@ const NavBar = () => {
           </div>
           <nav ref={navbar}>
             <div>
-              <Link>About</Link>
+              <a href='#footer'>About</a>
             </div>
             <div>
-              <Link>Rewards</Link>
+              <a href="#membership">Rewards</a>
             </div>
             <div>
               <Link>Login</Link>

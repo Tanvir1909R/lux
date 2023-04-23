@@ -1,11 +1,10 @@
 import React from "react";
 import "./footer.scss";
-import logo from "../../assets/logo.png";
 import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <div className="container">
         <div className="footer_wrapper">
           <a

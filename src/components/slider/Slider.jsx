@@ -55,7 +55,15 @@ export default function App({
         className="mySwiper"
       >
         {data.length ? (
-          data.map((img) => <SwiperSlide key={img}><img src={img} alt="events" /></SwiperSlide>)
+          data.map((img) => <SwiperSlide key={img.url}>
+            {img.link ? 
+            <a href={img.link} target="_blank" rel="noreferrer">
+              <img src={img.url} alt="events" />
+            </a>
+            :
+            <img src={img.url} alt="events" />
+            }
+            </SwiperSlide>)
         ) : (
           <>
             <SwiperSlide>Slide 1</SwiperSlide>

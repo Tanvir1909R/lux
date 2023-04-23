@@ -18,7 +18,7 @@ const Home = () => {
       <section>
         <Rewards />
       </section>
-      <section>
+      <section id="membership">
         <Membership />
       </section>
       <section>

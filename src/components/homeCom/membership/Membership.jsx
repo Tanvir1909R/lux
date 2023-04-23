@@ -16,6 +16,7 @@ const Membership = () => {
             LET’S TAKE <span>THE JOURNEY</span> TOGETHER.
           </h3>
           <button>Join Now</button>
+          <p>There are no fees—just consult with our team if you think it is the right fit for your <br /> needs, and we’ll get you set up for free.</p>
         </div>
         <div className="rewards_program">
           <div className="program_card">CARD</div>
@@ -26,6 +27,7 @@ const Membership = () => {
               </div>
               <div className="benefit_desc">
                 <h4>Preferred Pricing</h4>
+                <li>Enjoy exclusive pricing and benefits.</li>
               </div>
             </div>
             <div className="benefit">
@@ -34,6 +36,7 @@ const Membership = () => {
               </div>
               <div className="benefit_desc">
                 <h4>Early Access</h4>
+                <li>Try new and seasonal events before anyone else.</li>
               </div>
             </div>
             <div className="benefit">

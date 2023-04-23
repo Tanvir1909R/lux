@@ -8,7 +8,22 @@ import event4 from '../../../assets/event-4.jpg'
 
 const RecentEvents = () => {
   const events = [
-    event1,event2,event3,event4
+    {
+      url:event1,
+      link:'https://get-in.com/en/ONE_OF_US_Santa?seller_code=1i2gaEJonZ4'  
+    },
+    {
+      url:event2,
+      link:'https://megatix.co.id/events/people-of-the-future-x-kabana?aid=GLJUICEANDGINPPLFUTURE'  
+    },
+    {
+      url: event3,
+      link:'https://megatix.co.id/events/solar-live-fire-of-love-x-kabana?aid=GLJUICEANDGINSOLAR'
+    },
+    {
+      url:event4,
+      link:""
+    }
   ]
   return (
     <div className='container'>
