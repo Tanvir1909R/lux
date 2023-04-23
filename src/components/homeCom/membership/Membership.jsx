@@ -45,6 +45,7 @@ const Membership = () => {
               </div>
               <div className="benefit_desc">
                 <h4>Discord Access</h4>
+                <li>Chat directly with our corporate event planners via Slack.</li>
               </div>
             </div>
           </div>

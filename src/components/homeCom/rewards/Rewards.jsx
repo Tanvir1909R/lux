@@ -4,6 +4,10 @@ import { Slider } from "../..";
 import { gsap } from "gsap";
 import rightKey from "../../../assets/right_key.png";
 import leftKey from "../../../assets/left_key.png";
+import reward1 from '../../../assets/reward-1.jpg'
+import reward2 from '../../../assets/reward-2.jpg'
+import reward3 from '../../../assets/reward-3.jpg'
+import soon from '../../../assets/c.jpg'
 
 const Rewards = () => {
   const btn = useRef()
@@ -30,6 +34,24 @@ const Rewards = () => {
       });
     });
   }, []);
+  const data = [
+    {
+      url:reward1,
+      link:"",
+    },
+    {
+      url:reward2,
+      link:"",
+    },
+    {
+      url:reward3,
+      link:"",
+    },
+    {
+      url:soon,
+      link:"",
+    }
+  ]
   return (
     <div className="container">
       <div className="rewards_wrapper">
@@ -55,7 +77,7 @@ const Rewards = () => {
           </div>
         </div>
         <div className="reward_slider">
-          <Slider isAutoplay={true} isBreakdown={true} />
+          <Slider isAutoplay={true} isBreakdown={true} data={data} />
         </div>
       </div>
     </div>
