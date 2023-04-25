@@ -1,12 +1,13 @@
 import React from "react";
 import "./membership.scss";
-import tag from "../../../assets/tag.webp";
-import timer from "../../../assets/timer.webp";
-import discord from "../../../assets/discord.png";
+import {CgSandClock} from 'react-icons/cg'
+import {CiBadgeDollar} from 'react-icons/ci'
+import {FaDiscord} from 'react-icons/fa'
+import card from '../../../assets/card.png'
 
 const Membership = () => {
   return (
-    <div className="container">
+    <div className="container bg-black">
       <div className="membership_wrapper">
         <div className="membership_join">
           <h1>
@@ -19,11 +20,13 @@ const Membership = () => {
           <p>There are no fees—just consult with our team if you think it is the right fit for your <br /> needs, and we’ll get you set up for free.</p>
         </div>
         <div className="rewards_program">
-          <div className="program_card">CARD</div>
+          <div className="program_card">
+            <img src={card} alt="card" />
+          </div>
           <div className="benefits">
             <div className="benefit">
               <div className="benefit_icon">
-                <img src={tag} alt="tag" />
+                <CiBadgeDollar />
               </div>
               <div className="benefit_desc">
                 <h4>Preferred Pricing</h4>
@@ -32,7 +35,7 @@ const Membership = () => {
             </div>
             <div className="benefit">
               <div className="benefit_icon">
-                <img src={timer} alt="sand clock" />
+                <CgSandClock />
               </div>
               <div className="benefit_desc">
                 <h4>Early Access</h4>
@@ -41,7 +44,7 @@ const Membership = () => {
             </div>
             <div className="benefit">
               <div className="benefit_icon">
-                <img src={discord} alt="discord" />
+                <FaDiscord />
               </div>
               <div className="benefit_desc">
                 <h4>Discord Access</h4>

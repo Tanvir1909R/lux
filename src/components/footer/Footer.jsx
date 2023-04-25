@@ -16,8 +16,11 @@ const Footer = () => {
           </a>
           <h1>JOIN OUR COMMUNITY</h1>
           <button>REGISTER FOR REWARDS</button>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit similique reiciendis dolore ipsam suscipit fugiat magni ipsum, ex aut aliquam hic ab exercitationem atque adipisci debitis deleniti. Animi iure aperiam laborum voluptas ex quo quisquam est autem, porro vitae velit.</p>
-          <p>Website by <strong>G</strong></p>
+          <p>
+            Juice & Gin's VIP Corporate Rewards Program empowers young
+            entrepreneurs to find exclusive events & express themselves.These premier events come with access to members-only experiences
+            and direct messaging to our invite-only community.
+          </p>
         </div>
       </div>
     </footer>

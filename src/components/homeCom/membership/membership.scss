@@ -1,34 +1,34 @@
 @use "../../../index.scss" as *;
 
-
 .membership_wrapper {
   padding: 7rem 2rem;
+  color: white;
   .membership_heading {
     text-align: center;
     margin-bottom: 70px;
     h3 {
       font-size: $normal-heading;
     }
-  }                                                               
-  .membership_join{
+  }
+  .membership_join {
     margin-top: 20px;
     text-align: center;
-    h1{
+    h1 {
       font-size: $normal-heading;
-      span{
+      span {
         font-weight: bold;
         color: $line-color;
       }
     }
-    h3{
+    h3 {
       font-size: 1.5rem;
       margin: 30px 0 50px 0;
-      span{
+      span {
         font-weight: bold;
         color: $line-color;
       }
     }
-    p{
+    p {
       margin: 25px 0;
     }
     button {
@@ -37,78 +37,191 @@
         $primary-button-hover-bg,
         $primary-button-fontSize,
         $primary-button-w,
-        $primary-button-h,
+        $primary-button-h
       );
       z-index: 1;
-    } 
+    }
   }
 }
 
-.rewards_program{
+.rewards_program {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   margin-top: 90px;
-  .program_card{
-    width: 100%;
-    height:100%;
-    background-color: rgb(153, 152, 152);
+  align-items: center;
+  .program_card {
+    height: 325px;
+    &:hover {
+      -webkit-animation: bounce-top 0.9s both;
+      animation: bounce-top 0.9s both;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
   }
-  .benefits{
+  .benefits {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    .benefit{
+    .benefit {
       display: flex;
       align-items: center;
       flex-direction: column;
-      .benefit_icon{
-        width: 70px;
-        img{
+      .benefit_icon {
+        font-size: 2rem;
+        svg {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
-      .benefit_desc{
+      .benefit_desc {
         text-align: center;
-        h4{
+        h4 {
           font-size: 1.2rem;
         }
       }
     }
   }
 }
-
-@media(max-width:1260px){
-    .benefits {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 20px;
-    }
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
 }
 
-@media(max-width:1023px){
+@media (max-width: 1260px) {
+  .benefits {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
   .membership_wrapper {
-    .membership_cards{
-      grid-template-columns: repeat(2,1fr);
+    .membership_cards {
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 40px;
     }
   }
 }
 
-@media(max-width:690px){
+@media (max-width: 690px) {
   .membership_wrapper {
-    .membership_cards{
-      grid-template-columns: repeat(1,1fr);
+    .membership_cards {
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 40px;
     }
   }
-  .rewards_program{
+  .rewards_program {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     margin-top: 90px;
-    .benefits{
+    .benefits {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;

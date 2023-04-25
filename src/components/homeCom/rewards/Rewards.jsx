@@ -37,15 +37,15 @@ const Rewards = () => {
   const data = [
     {
       url:reward1,
-      link:"",
+      link:"https://linktr.ee/kabanaubud",
     },
     {
       url:reward2,
-      link:"",
+      link:"https://linktr.ee/rumors_ibiza",
     },
     {
       url:reward3,
-      link:"",
+      link:"https://www.savaya.com",
     },
     {
       url:soon,

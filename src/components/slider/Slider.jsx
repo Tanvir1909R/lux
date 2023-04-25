@@ -17,13 +17,14 @@ export default function App({
   isAutoplay,
   isBreakdown,
   data = [],
+  isLoop
 }) {
   return (
     <>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        loop={true}
+        loop={isLoop ? true : false}
         autoplay={
           isAutoplay
             ? {
