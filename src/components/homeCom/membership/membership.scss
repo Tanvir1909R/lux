@@ -51,15 +51,16 @@
   margin-top: 90px;
   align-items: center;
   .program_card {
-    height: 325px;
+    height: 100%;
     &:hover {
-      -webkit-animation: bounce-top 0.9s both;
-      animation: bounce-top 0.9s both;
+      -webkit-animation: bounce-top 1s both;
+      animation: bounce-top 1s both;
+      animation-fill-mode: forwards;
     }
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 20px;
     }
   }
@@ -225,6 +226,15 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
+    }
+    .program_card {
+      height: 100%;
+      border-radius: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 }

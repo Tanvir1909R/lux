@@ -17,7 +17,7 @@ const Footer = () => {
           <h1>JOIN OUR COMMUNITY</h1>
           <button>REGISTER FOR REWARDS</button>
           <p>
-            Juice & Gin's VIP Corporate Rewards Program empowers young
+            JAG VIP Corporate Rewards Program empowers young
             entrepreneurs to find exclusive events & express themselves.These premier events come with access to members-only experiences
             and direct messaging to our invite-only community.
           </p>

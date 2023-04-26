@@ -16,7 +16,7 @@ const Membership = () => {
           <h3>
             LET’S TAKE <span>THE JOURNEY</span> TOGETHER.
           </h3>
-          <button>Join Now</button>
+          <button>Apply Now</button>
           <p>There are no fees—just consult with our team if you think it is the right fit for your <br /> needs, and we’ll get you set up for free.</p>
         </div>
         <div className="rewards_program">

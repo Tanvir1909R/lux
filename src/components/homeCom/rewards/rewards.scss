@@ -90,6 +90,14 @@
   }
 }
 
+@media (max-width: 1240px) {
+  .key_button{
+    img{
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 950px) {
   .rewards_wrapper {
     .reward_detail {
